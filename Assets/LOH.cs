@@ -7,7 +7,7 @@ public class LOH : MonoBehaviour
     public float loh = 1;
     void Start()
     {
-        loh = 5;
+        loh = 4;
     }
     void Update()
     {
