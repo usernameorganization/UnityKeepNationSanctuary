@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 4354c5d9a65efcd448671bd53adad826
+=======
 guid: f1f126a722d33d54fa505c516e68f5ba
+>>>>>>> 96bb15a... CreateButtonsInSettingMenu
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

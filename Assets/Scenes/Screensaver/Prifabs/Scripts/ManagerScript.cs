@@ -68,7 +68,10 @@ public class ManagerScript : MonoBehaviour
         GlobalManager.idForSceneScreen = 0;
         SceneManager.LoadScene("Menu");
     }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 96bb15a... CreateButtonsInSettingMenu
     void Start()
     {
         timer = 10;

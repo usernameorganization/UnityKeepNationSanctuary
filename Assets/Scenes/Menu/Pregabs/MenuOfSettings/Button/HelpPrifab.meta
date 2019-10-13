@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD:Assets/Scenes/Menu/Pregabs/MenuOfSettings/Button/HelpPrifab.meta
 guid: efbb57471f08086419400ab232848521
+=======
+guid: 9e1deb40c3cf9394fab6402150b43873
+>>>>>>> 96bb15a... CreateButtonsInSettingMenu:Assets/Scenes/Menu/Pregabs/MenuOfSettings/Button.meta
+=======
+guid: efbb57471f08086419400ab232848521
+>>>>>>> 96bb15a... CreateButtonsInSettingMenu
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
