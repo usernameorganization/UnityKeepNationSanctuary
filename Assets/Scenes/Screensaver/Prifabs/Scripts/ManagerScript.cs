@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ManagerScript : MonoBehaviour
@@ -47,6 +48,7 @@ public class ManagerScript : MonoBehaviour
                 if (id >= layer.Length)
                 {
                     isCheck = false;
+                    theEndAnimatons();
                 }
                 else
                 {
@@ -59,6 +61,12 @@ public class ManagerScript : MonoBehaviour
                 delayTimer--;
             }
         }
+    }
+
+    public void theEndAnimatons()
+    {
+        GlobalManager.idForSceneScreen = 0;
+        SceneManager.LoadScene("Menu");
     }
 
     void Start()
