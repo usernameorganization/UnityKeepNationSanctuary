@@ -19,20 +19,31 @@ public class OpenMenu : MonoBehaviour
 
     public void Update()
     {
-        
-    }
-
-    public void buttonMethod()
-    {
-        if (isOpen)
+        print(isOpen);
+        if (GetComponent<GUIscript>().indexOfLayer != GlobalManager.GuiIndexLayer & isOpen == false)
         {
             animator.SetBool("isOpen", isOpen);
             isOpen = false;
         }
+    }
+
+    public void buttonMethod()
+    {
+
+        if (isOpen)
+        {
+            GlobalManager.GuiIndexLayer = GetComponent<GUIscript>().indexOfLayer;
+            if (GetComponent<GUIscript>().indexOfLayer == GlobalManager.GuiIndexLayer)
+            {
+                animator.SetBool("isOpen", isOpen);
+                isOpen = false;
+            }
+        }
         else
         {
-            animator.SetBool("isOpen", isOpen);
-            isOpen = true;
+                animator.SetBool("isOpen", isOpen);
+                isOpen = true;
+                GlobalManager.GuiIndexLayer = 0;
         }
     }
 }

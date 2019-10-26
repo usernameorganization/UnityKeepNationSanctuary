@@ -7,5 +7,6 @@ public class GlobalManager
 {
 
     public static int idForSceneScreen;
+    public static int GuiIndexLayer;
 
 }

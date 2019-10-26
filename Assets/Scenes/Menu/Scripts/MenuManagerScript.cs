@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +7,8 @@ public class MenuManagerScript : MonoBehaviour
 {
 
     public GameObject[] background;
-
+    public GameObject[] MapBg = new GameObject[7];
+    public int MapBgIsActive;
     void Start()
     {
         activeAnimation(background[GlobalManager.idForSceneScreen]);
@@ -14,7 +16,7 @@ public class MenuManagerScript : MonoBehaviour
 
     void Update()
     {
-        
+        MapBgActivation();
     }
 
     public void activeAnimation(GameObject background)
@@ -23,4 +25,17 @@ public class MenuManagerScript : MonoBehaviour
         Animator animator = background.GetComponent<Animator>();
         animator.Play("ShowTheCanvas", 0);
     }
+    public void MapBgActivation()
+    {
+        for(int i = 0; i < MapBg.Length; i++)
+        {
+            if (i == MapBgIsActive)
+            {
+                MapBg[i].SetActive(true);
+            }
+            else MapBg[i].SetActive(false);
+        }
+    }
+
 }
+
